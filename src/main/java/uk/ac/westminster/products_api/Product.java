@@ -16,6 +16,7 @@ public class Product {
     public Long getId() {
         return id;
     }
+    //I would notice the field being missing by analyzing the order of the fields being printed.
 
     public String getName() {
         return name;
