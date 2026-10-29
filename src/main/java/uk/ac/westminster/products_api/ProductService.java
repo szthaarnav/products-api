@@ -16,6 +16,14 @@ public class ProductService {
         return products;
     }
 
+    public ProductService(){
+        products.add(new DigitalProduct(nextId++,"Clean Code (E- Book)",
+                29.99, "/downloads/clean-code.pdf",4.2));
+        products.add(new PhysicalProduct(nextId++,"White Mouse",
+                204.99, 2.7,"5cm x 3cm x 1.9cm"));
+
+    }
+
     public Product addProduct(Product product){
         product.setId(nextId++);
         products.add(product);
